@@ -1,5 +1,5 @@
 package chap_06;
-
+//전달값과 반환값
 public class _04_ParameterAndReturn { // 02번이랑 같이 비교하면서 봐봐. void 유무로 전달 반환 갈린다.
 //전달값과 반환값을 함께 가지는 메도스
 	public static int getPower(int number) { // return을 할거니 void 없애
