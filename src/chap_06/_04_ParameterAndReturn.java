@@ -1,4 +1,5 @@
 package chap_06;
+
 //전달값과 반환값
 public class _04_ParameterAndReturn { // 02번이랑 같이 비교하면서 봐봐. void 유무로 전달 반환 갈린다.
 //전달값과 반환값을 함께 가지는 메도스
@@ -17,7 +18,7 @@ public class _04_ParameterAndReturn { // 02번이랑 같이 비교하면서 봐�
 
 			result *= number;
 		}
-		return result; //_02_에서 만든거에서 이거 한줄만 엄으면 끝.
+		return result; // _02_에서 만든거에서 이거 한줄만 엄으면 끝.
 	}
 
 	public static void main(String[] args) { //
@@ -42,7 +43,10 @@ public class _04_ParameterAndReturn { // 02번이랑 같이 비교하면서 봐�
 		System.out.println(retVal);
 
 		System.out.println(getPowerByExp(2, 4)); // 2*2*2*2 = 16
-		//retVal로 전달 안받아도 바로 이렇게 해줘도 된다.
+		// retVal로 전달 안받아도 바로 이렇게 해줘도 된다. 이게 더 편할거 같은데 왜 굳이...
+		// 가독성 때문이다. retVal를 임시변수로 지정해주면 중간결과가 복잡하거나 중간과정으로 보여줘서 코드이해 쉽게 보여줄려고.
+		// 그냥 바로 프린트 안에 겟 하는게 메모리 사용량에서는 더 좋다.
+		// = 표시는 늘 뒤에서 앞으로 읽어라.
 
 	}
 
