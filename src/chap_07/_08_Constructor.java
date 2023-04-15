@@ -15,15 +15,23 @@ public class _08_Constructor {
 		b1.resolution = "FHD";
 		b1.price = 200000;
 		b1.color = "블랙";
+		System.out.println(b1.modelName);
+		System.out.println(b1.serialNumber);
+		System.out.println("----------------");
 		
 		//생성자 이용하면 위의 작업을 편하게 할수있다. 다시 블박
 		
 		BlackBox b2 = new BlackBox("하양이", "UHD", 300000, "화이트");
 		//위의 b1.~"까망이" 이 부분을 생성자 처리를 해놓음으로 해서 이줄 하나로 끝냄.
-		System.out.println(b2.modelName);
-		System.out.println(b2.resolution);
-		System.out.println(b2.price);
-		System.out.println(b2.color);
+//		System.out.println(b2.modelName);
+//		System.out.println(b2.resolution);
+//		System.out.println(b2.price);
+//		System.out.println(b2.color);		
+		System.out.println(b2.modelName); //하양이
+		System.out.println(b2.serialNumber); //2
+		//프린트는 이거 2줄밖에 안했는데 this();로 기본생성자 호출을 해놨기 때문에
+		//위에 기본생성자에 있는 프린트가 다 적힌뒤에 하양이랑 2가 뒤따라 나왔다
+		
 				
 			
 	}
