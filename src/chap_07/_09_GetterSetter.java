@@ -27,7 +27,8 @@ public class _09_GetterSetter {
 		System.out.println("가격 : " + b2.getPrice() + "원");
 		System.out.println("해상도 : " + b2.getResolution());
 		
-		b2.price = -5000;// 이걸로 여전히 설정할수 있다. 이거못하게 하는걸 다음장에서.
+		b2.price = -5000;// 이걸로 여전히 설정할수 있다.(명령 오류가 안난단 얘기)
+		//이거못하게 하는걸 다음장에서.
 		
 		//b1에 비해 합리적인 정보가 나온다
 		//게터와 세터 이용하면 이상한값에 대한 오류를 줄일수 있고
