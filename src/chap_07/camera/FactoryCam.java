@@ -4,7 +4,16 @@ public class FactoryCam extends Camera { // 자식 클래스 .. extends 부모 �
 //	public String name;
 
 	public FactoryCam() {
-		this.name = "공장 카메라";
+	//	this.name = "공장 카메라";//생성자에서 다 name 카메라를 쓴다
+		super("공장 카메라"); // super(); = 부모 클래스의 생성자에 바로 접근.
+	}
+	
+	public void recordVideo() { //오버라이딩 하긴 했지만, 부모꺼 + 그다음꺼까지.
+		// 동영상 녹화
+//		System.out.println(this.name + " : 동영상을 녹화합니다.");
+		super.recordVideo(); //위에 부모하는 역할을 하고 나서 밑에꺼 한다. 일일이 다 쓰고 또 고치고 할필요 없음.
+		detectFire();
+			
 	}
 	
 //	public void takePicture() {

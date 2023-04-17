@@ -36,7 +36,7 @@ public class _05_VariableNaming {
 
 		// 절대 변하지 않는 상수는 대문자로
 		final String CODE = "KR"; // 코드만 보고 상수임을 알수있도록 CODE라고 이름 짓는다
-		// final 붙이면 KR이 상수가 된다(뭔말이야 이건)
+		// final 붙이면 KR이 상수가 된다(뭔말이야 이건) - 바꿀수 없는 수. 변수랑 다른말
 //        CODE = "US"; // 상수는 US로 다시 바꿀수 없다.
 
 		System.out.println(CODE); // 실행해봐라 오류난다
