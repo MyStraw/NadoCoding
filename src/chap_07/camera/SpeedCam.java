@@ -4,8 +4,20 @@ public class SpeedCam extends Camera { // 자식 클래스
 //	public String name;
 
 	public SpeedCam() {
-		this.name = "과속단속 카메라";
+		//this.name = "과속단속 카메라";//생성자에서 다 name 카메라를 쓴다
+		super("과속단속 카메라");
 	}
+	
+
+	public void takePicture() {
+		// 사진 촬영
+//		System.out.println(this.name + " : 사진을 촬영합니다.");
+		super.takePicture();
+		checkSpeed();
+		recognizeLicensePlate();
+
+	}
+
 
 //	public void takePicture()	{
 //		// 사진촬영
