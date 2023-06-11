@@ -16,7 +16,7 @@ public class FactoryCam extends Camera implements Detectable, Reportable {
     }
 
     @Override
-    public void showMainFeature() {
+    public void showMainFeature() { //팩토리 캠은 객체 생성 가능.
         System.out.println("화재 감지");
     }
 
